@@ -1,0 +1,53 @@
+{
+  "name": "udpf",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://rtnogueira.github.io/udpf/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtnogueira/udpf.git"
+  },
+  "author": "Ruben Tiago Nogueira",
+  "dependencies": {
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "cross-env": "^5.2.0",
+    "dayjs": "^1.8.16",
+    "gh-pages": "^2.1.1",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-ga": "^2.6.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development react-scripts start",
+    "build": "cross-env NODE_ENV=production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "proxy": "https://europe-west1-ud-pontefrielas.cloudfunctions.net/api",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
