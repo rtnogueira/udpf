@@ -20,12 +20,12 @@ const BottomNav = () => {
 
   return (
     <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
+        value={value}
+        onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
-      className={classes.root}
+        showLabels
+        className={classes.root}
     >
       <BottomNavigationAction label="Home" icon={<HomeIcon />} />
       <BottomNavigationAction label="Equipa" icon={<PeopleIcon />} />

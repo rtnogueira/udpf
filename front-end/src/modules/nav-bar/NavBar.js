@@ -81,7 +81,7 @@ const useStyles = (drawerWidth) => makeStyles((theme) => (
     }
 ));
 
-const Navbar = (props) => {
+const Navbar = () => {
     const drawer = useSelector(state => state.drawer);
     const dispatch = useDispatch()
     const classes = useStyles(drawer.width)();
@@ -139,25 +139,25 @@ const Navbar = (props) => {
                         <ListItemIcon>
                             <AssignmentInd />
                         </ListItemIcon>
-                        <ListItemText primary='Home' />
+                        <ListItemText primary="Home" />
                     </ListItem>
                     <ListItem button component="a" href="/squad" key={'Plantel'}>
                         <ListItemIcon>
                             <AssignmentInd />
                         </ListItemIcon>
-                        <ListItemText primary='Plantel' />
+                        <ListItemText primary="Plantel" />
                     </ListItem>
                     <ListItem button component="a" href="/legue" key={'Liga'}>
                         <ListItemIcon>
                             <AssignmentInd />
                         </ListItemIcon>
-                        <ListItemText primary='Liga' />
+                        <ListItemText primary="Liga" />
                     </ListItem>
                     <ListItem button component="a" href="/announcesSquads" key={'Convocatória'}>
                         <ListItemIcon>
                             <AssignmentInd />
                         </ListItemIcon>
-                        <ListItemText primary='Convocatória' />
+                        <ListItemText primary="Convocatória" />
                     </ListItem>
                 </List>
             </Drawer>

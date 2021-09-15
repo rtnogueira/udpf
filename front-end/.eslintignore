@@ -1,0 +1,7 @@
+/coverage
+/build
+**/node_modules
+*.log
+.DS_Store
+.vscode/
+sh.exe.stackdump
