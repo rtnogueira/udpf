@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import themeFile from './theme/theme';
 import './App.css';
 import { Provider } from 'react-redux';
@@ -11,12 +10,12 @@ import { BottomNav } from './modules/bottom-nav';
 import { Home } from './pages/home';
 import { Squad } from './pages/squad';
 
-const theme = createMuiTheme(themeFile);
+const theme = createTheme(themeFile);
 
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <Provider store={store}>
           <BrowserRouter>
             <NavBar />
@@ -31,7 +30,7 @@ class App extends Component {
             <BottomNav />
           </BrowserRouter>
         </Provider>
-      </MuiThemeProvider>
+      </ThemeProvider>
     );
   }
 }
