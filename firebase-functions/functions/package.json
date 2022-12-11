@@ -14,7 +14,7 @@
   "private": true,
   "dependencies": {
     "busboy": "^0.3.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase": "^9.0.2",
     "firebase-admin": "^9.11.1",
     "firebase-functions": "^3.15.5"
